@@ -19,7 +19,7 @@ public class Main
         boolean v = false;
         if(flags[2].equals("yes")) v = true;
 
-        GenerateWordList.generateWordList(n, pathToFile, v, 10);
+        GenerateWordList.generateWordList(n, pathToFile, v, 1000);    // last param is the interval for the Timer to print the status
 
         System.out.println("Processing... 100.00%\t################################################## !!!");
         System.out.println("\nOutput written to: " + Paths.get(pathToFile).toAbsolutePath().normalize().toString());
