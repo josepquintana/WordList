@@ -5,7 +5,6 @@ import java.util.TimerTask;
 
 public class GenerateWordList
 {
-    private static char[] word;
     private static int n;
     private static boolean v;
     private static Timer printStatusTimer;
@@ -26,6 +25,7 @@ public class GenerateWordList
     }
 
     private static void generateWL() throws IOException {
+        char[] word;
         // each call to recursive method "generate(int, int, char[])" writes to the
         // output file all the possible combinations of characters with length 'n'
         for (int i = 1; i <= n; i++) {
